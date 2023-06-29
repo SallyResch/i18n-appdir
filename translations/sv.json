@@ -1,6 +1,7 @@
 {
   "Home": {
     "title": "Hej Världen!",
-    "subtitle": "Jag lyckades ta mig fan med översättningen för appDirectory"
+    "subtitle": "Jag lyckades ta mig fan med översättningen för appDirectory",
+    "alertMessage": "Gillar du att koda?!"
   }
 }

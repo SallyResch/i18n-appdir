@@ -1,5 +1,6 @@
 import { useTranslations } from "next-intl";
 import Link from "next-intl/link";
+import AlertMessage from "./AlertMessage";
 
 export default function Home() {
   const t = useTranslations('Home');
@@ -13,6 +14,7 @@ export default function Home() {
       <div>
       <p>{t('title')}</p>
       <p>{t('subtitle')}</p>
+      <AlertMessage message={t("alertMessage")}/>
       </div>
     </div>
   )
