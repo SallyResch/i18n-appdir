@@ -8,13 +8,15 @@ export default function Home() {
   return (
     <div>
       <div>
-      <Link href="/" locale="en">English</Link>
-      <Link href="/" locale="sv">Svenska</Link>
+          <Link href="/" locale="en">English</Link>
+          <Link href="/" locale="sv">Svenska</Link>
       </div>
       <div>
       <p>{t('title')}</p>
       <p>{t('subtitle')}</p>
       <AlertMessage message={t("alertMessage")}/>
+      <button>{t('buttonYes')}</button>
+      <button>{t('buttonNo')}</button>
       </div>
     </div>
   )

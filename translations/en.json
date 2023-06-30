@@ -2,6 +2,8 @@
   "Home": {
     "title": "Hello world!",
     "subtitle": "I fakking did it with the new translation in appDirectory",
-    "alertMessage": "Do you like to code?!"
+    "alertMessage": "Do you like to code?!",
+    "buttonYes": "Yes",
+    "buttonNo": "No" 
   }
 }
