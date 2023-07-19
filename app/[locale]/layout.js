@@ -1,8 +1,8 @@
 import './globals.css'
-import { Inter } from 'next/font/google'
+import { Inter } from 'next/font/google';
 import { useLocale } from 'next-intl';
 import { notFound } from 'next/navigation';
-
+import CookieBanner from './components/cookieBanner.jsx';
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
@@ -20,7 +20,10 @@ export default function RootLayout({ children, params }) {
   }
   return (
     <html lang={locale}>
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        {children}
+      </body>
     </html>
+
   )
 }

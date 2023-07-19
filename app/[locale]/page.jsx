@@ -1,8 +1,7 @@
 import { useTranslations } from "next-intl";
-import Link from "next-intl/link";
 import AlertMessage from "./AlertMessage";
 import Navbar from "./components/nav";
-
+import CookieBanner from "./components/cookieBanner";
 
 export default function Home() {
   const t = useTranslations('Home');
@@ -10,10 +9,6 @@ export default function Home() {
   return (
     <div>
       <Navbar/>
-     {/*  <div>
-          <Link href="/" locale="en">English</Link>
-          <Link href="/" locale="sv">Svenska</Link>
-      </div> */}
       <div>
       <p>{t('title')}</p>
       <p>{t('subtitle')}</p>
@@ -21,6 +16,7 @@ export default function Home() {
       <button>{t('buttonYes')}</button>
       <button>{t('buttonNo')}</button>
       </div>
+      <CookieBanner/>
     </div>
   )
 }
